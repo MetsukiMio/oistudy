@@ -1,49 +1,61 @@
-add_packages("fmt")
 add_requires("fmt")
+add_packages("fmt")
 
 target("dp_lcs")
-set_kind("binary")
-add_files("dp_lcs.cpp")
+    set_kind("binary")
+    add_files("dp_lcs.cpp")
 
 target("bfs_findpath")
-set_kind("binary")
-add_files("bfs_findpath.cpp")
+    set_kind("binary")
+    add_files("bfs_findpath.cpp")
 
 target("sort_bubble")
-set_kind("binary")
-add_files("sort_bubble.cpp")
+    set_kind("binary")
+    add_files("sort_bubble.cpp")
 
 target("dp_triandle")
-set_kind("binary")
-add_files("dp_triandle.cpp")
+    set_kind("binary")
+    add_files("dp_triandle.cpp")
 
 target("dp_fibonacci")
-set_kind("binary")
-add_files("dp_fibonacci.cpp")
+    set_kind("binary")
+    add_files("dp_fibonacci.cpp")
 
 target("bfs_elevator")
-set_kind("binary")
-add_files("bfs_elevator.cpp")
+    set_kind("binary")
+    add_files("bfs_elevator.cpp")
 
 target("dfs_base")
-set_kind("binary")
-add_files("dfs_base.cpp")
+    set_kind("binary")
+    add_files("dfs_base.cpp")
 
 target("greedy_barnrepair")
-set_kind("binary")
-add_files("greedy_barnrepair.cpp")
+    set_kind("binary")
+    add_files("greedy_barnrepair.cpp")
 
 target("sort_selection")
-set_kind("binary")
-add_files("sort_selection.cpp")
+    set_kind("binary")
+    add_files("sort_selection.cpp")
 
 target("binary_search")
-set_kind("binary")
-add_files("binary_search.cpp")
+    set_kind("binary")
+    add_files("binary_search.cpp")
 
 target("dfs_arrange")
-set_kind("binary")
-add_files("dfs_arrange.cpp")
+    set_kind("binary")
+    add_files("dfs_arrange.cpp")
+
+target("actual_csps202501")
+    set_kind("binary")
+    add_files("actual_csps202501.cpp")
+
+target("actual_cspj202503")
+    set_kind("binary")
+    add_files("actual_cspj202503.cpp")
+
+target("actual_cspj202504")
+    set_kind("binary")
+    add_files("actual_cspj202504.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
@@ -113,3 +125,4 @@ add_files("dfs_arrange.cpp")
 --
 -- @endcode
 --
+
