@@ -13,9 +13,9 @@ target("sort_bubble")
     set_kind("binary")
     add_files("sort_bubble.cpp")
 
-target("dp_triandle")
-    set_kind("binary")
-    add_files("dp_triandle.cpp")
+-- target("dp_triandle")
+--     set_kind("binary")
+--     add_files("dp_triandle.cpp")
 
 target("dp_fibonacci")
     set_kind("binary")
@@ -56,6 +56,14 @@ target("actual_cspj202503")
 target("actual_cspj202504")
     set_kind("binary")
     add_files("actual_cspj202504.cpp")
+
+target("dp_lnds")
+    set_kind("binary")
+    add_files("dp_lnds.cpp")
+
+target("actual_cspj202501")
+    set_kind("binary")
+    add_files("actual_cspj202501.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
