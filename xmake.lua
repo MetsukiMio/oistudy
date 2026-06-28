@@ -1,5 +1,7 @@
 add_requires("fmt")
 add_packages("fmt")
+add_cxflags("-fsanitize=undefined")
+add_ldflags("-fsanitize=undefined")
 
 target("dp_lcs")
     set_kind("binary")
@@ -64,6 +66,14 @@ target("dp_lnds")
 target("actual_cspj202501")
     set_kind("binary")
     add_files("actual_cspj202501.cpp")
+
+target("dp_pack01")
+    set_kind("binary")
+    add_files("dp_pack01.cpp")
+
+target("dp_packcomplete")
+    set_kind("binary")
+    add_files("dp_packcomplete.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
