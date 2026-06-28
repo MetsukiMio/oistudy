@@ -1,11 +1,13 @@
 add_requires("fmt")
 add_packages("fmt")
-add_cxflags("-fsanitize=undefined")
-add_ldflags("-fsanitize=undefined")
 
 target("dp_lcs")
     set_kind("binary")
     add_files("dp_lcs.cpp")
+
+target("dp_packcomplete")
+    set_kind("binary")
+    add_files("dp_packcomplete.cpp")
 
 target("bfs_findpath")
     set_kind("binary")
@@ -15,13 +17,13 @@ target("sort_bubble")
     set_kind("binary")
     add_files("sort_bubble.cpp")
 
--- target("dp_triandle")
---     set_kind("binary")
---     add_files("dp_triandle.cpp")
-
 target("dp_fibonacci")
     set_kind("binary")
     add_files("dp_fibonacci.cpp")
+
+target("actual_cspj201901")
+    set_kind("binary")
+    add_files("actual_cspj201901.cpp")
 
 target("bfs_elevator")
     set_kind("binary")
@@ -39,6 +41,18 @@ target("sort_selection")
     set_kind("binary")
     add_files("sort_selection.cpp")
 
+target("actual_cspj202504")
+    set_kind("binary")
+    add_files("actual_cspj202504.cpp")
+
+target("dp_lnds")
+    set_kind("binary")
+    add_files("dp_lnds.cpp")
+
+target("dp_pack01")
+    set_kind("binary")
+    add_files("dp_pack01.cpp")
+
 target("binary_search")
     set_kind("binary")
     add_files("binary_search.cpp")
@@ -55,25 +69,13 @@ target("actual_cspj202503")
     set_kind("binary")
     add_files("actual_cspj202503.cpp")
 
-target("actual_cspj202504")
-    set_kind("binary")
-    add_files("actual_cspj202504.cpp")
-
-target("dp_lnds")
-    set_kind("binary")
-    add_files("dp_lnds.cpp")
-
 target("actual_cspj202501")
     set_kind("binary")
     add_files("actual_cspj202501.cpp")
 
-target("dp_pack01")
+target("dp_pack01_mem")
     set_kind("binary")
-    add_files("dp_pack01.cpp")
-
-target("dp_packcomplete")
-    set_kind("binary")
-    add_files("dp_packcomplete.cpp")
+    add_files("dp_pack01_mem.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
